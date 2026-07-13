@@ -23,26 +23,26 @@ export function ContactSection() {
     } = useForm<FormValues>({ resolver: zodResolver(schema) });
 
     const onSubmit = (values: FormValues) => {
-        const mailto = `mailto:mohamed@fayad.site?subject=Portfolio%20Inquiry&body=${encodeURIComponent(`Name: ${values.name}\nEmail: ${values.email}\n\n${values.message}`)}`;
+        const mailto = `mailto:mohamedgfyad@gmail.com?subject=Portfolio%20Inquiry&body=${encodeURIComponent(`Name: ${values.name}\nEmail: ${values.email}\n\n${values.message}`)}`;
         window.location.href = mailto;
     };
 
     return (
         <Section
             eyebrow="Contact"
-            title="Let’s build something thoughtful together."
-            description="Whether you’re hiring, founding, or planning a product sprint, I’m ready to contribute."
+            title="Let's connect and build something amazing."
+            description="Open to collaboration, freelance opportunities, or full-time roles. Reach out for Flutter development, mobile projects, or tech discussions."
             className="border-t border-white/10"
         >
             <div className="grid gap-6 rounded-3xl border border-white/10 bg-white/5 p-8 md:grid-cols-[0.9fr_1.1fr]">
                 <div className="space-y-4 text-zinc-300">
                     <p>
-                        Reach out for freelance work, collaborations, or conversations about product engineering.
+                        I'm open to freelance projects, full-time roles, and collaborations. Whether you need a Flutter app, technical consultation, or want to discuss mobile development best practices.
                     </p>
                     <div className="rounded-2xl border border-white/10 bg-zinc-900/70 p-4">
                         <p className="text-sm uppercase tracking-[0.25em] text-zinc-500">Direct contact</p>
-                        <p className="mt-2 text-lg text-zinc-100">mohamed@fayad.site</p>
-                        <p className="mt-1 text-sm text-zinc-400">Cairo, Egypt · Available globally</p>
+                        <p className="mt-2 text-lg text-zinc-100">mohamedgfyad@gmail.com</p>
+                        <p className="mt-1 text-sm text-zinc-400">Port Said, Egypt · +20 102 907 6345</p>
                     </div>
                 </div>
 

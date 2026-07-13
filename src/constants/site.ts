@@ -1,11 +1,12 @@
 export const siteConfig = {
-  name: "Mohamed Fayad",
-  title: "Software Engineer",
-  domain: "https://fayad.site",
-  email: "mohamed@fayad.site",
-  location: "Cairo, Egypt",
+  name: "Mohamed Fayyad",
+  title: "Flutter Mobile Developer",
+  domain: "https://mohamedgfyad.dev",
+  email: "mohamedgfyad@gmail.com",
+  phone: "+20 102 907 6345",
+  location: "Port Said, Egypt — Ready to relocate",
   description:
-    "I design and build polished digital products with a strong focus on product thinking, performance, and thoughtful user experience.",
+    "Flutter-focused mobile developer experienced in building scalable cross-platform applications. Strong background in Dart, Flutter, state management, clean architecture, and API integration.",
   navItems: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },

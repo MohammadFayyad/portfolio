@@ -9,25 +9,25 @@ import { Navbar } from "@/components/sections/navbar";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fayad.site"),
+  metadataBase: new URL("https://mohamedgfyad.dev"),
   title: {
-    default: "Mohamed Fayad | Software Engineer",
-    template: "%s | Mohamed Fayad",
+    default: "Mohamed Fayyad | Flutter Mobile Developer — Flutter, Dart, Clean Architecture",
+    template: "%s | Mohamed Fayyad",
   },
   description:
-    "Software engineer crafting elegant web experiences, scalable products, and premium digital interfaces.",
-  keywords: ["software engineer", "frontend engineer", "next.js", "portfolio", "product engineer"],
+    "Flutter-focused mobile developer with expertise in cross-platform development, clean architecture, BLoC/Cubit state management, and Firebase integration. Port Said, Egypt.",
+  keywords: ["flutter developer", "mobile developer", "dart", "cross-platform", "BLoC", "Cubit", "clean architecture", "firebase", "portfolio", "egypt"],
   openGraph: {
-    title: "Mohamed Fayad | Software Engineer",
-    description: "Premium portfolio for a software engineer focused on product and frontend craftsmanship.",
-    url: "https://fayad.site",
-    siteName: "Mohamed Fayad",
+    title: "Mohamed Fayyad | Flutter Mobile Developer",
+    description: "Premium portfolio showcasing Flutter mobile development expertise and projects.",
+    url: "https://mohamedgfyad.dev",
+    siteName: "Mohamed Fayyad",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mohamed Fayad | Software Engineer",
-    description: "Premium portfolio for a software engineer focused on product and frontend craftsmanship.",
+    title: "Mohamed Fayyad | Flutter Mobile Developer",
+    description: "Premium portfolio showcasing Flutter mobile development expertise and projects.",
   },
   icons: {
     icon: "/favicon.ico",

@@ -2,87 +2,87 @@ import type { ExperienceItem, ProjectItem, ResumeItem, SkillGroup } from "@/type
 
 export const experience: ExperienceItem[] = [
   {
-    title: "Senior Frontend Engineer",
-    company: "Independent Product Studio",
-    period: "2023 — Present",
+    title: "Front-End & Cross-Platform Development Trainee",
+    company: "Information Technology Institute (ITI)",
+    period: "Mar 2025 — Aug 2025",
     description:
-      "Designing and shipping high-conversion SaaS and product experiences with a strong focus on performance, accessibility, and product storytelling.",
+      "Intensive training in Flutter and Dart for cross-platform mobile development. Developed Flutter applications using state management and REST APIs. Applied clean architecture and software engineering best practices. Worked with Firebase Authentication, Firestore, and FCM.",
   },
   {
-    title: "Software Engineer",
-    company: "Digital Product Team",
-    period: "2020 — 2023",
+    title: "Production Engineer",
+    company: "Alporsaideya for Food Industries Co.",
+    period: "Nov 2024 — Dec 2024",
     description:
-      "Built cross-platform web applications, internal tools, and customer-facing dashboards using React and modern cloud services.",
+      "Monitored production processes and ensured quality compliance.",
   },
   {
-    title: "Frontend Developer",
-    company: "Agency Collective",
-    period: "2018 — 2020",
+    title: "Assistant Manager",
+    company: "Restaurant",
+    period: "2021 — Mar 2024",
     description:
-      "Delivered polished marketing sites and interactive experiences that balanced clean design with measurable business goals.",
+      "Managed daily operations, staff coordination, and customer relations.",
   },
 ];
 
 export const skillGroups: SkillGroup[] = [
   {
-    title: "Frontend",
-    items: ["React", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS"],
+    title: "Languages",
+    items: ["Dart", "JavaScript", "C/C++", "SQL", "HTML/CSS"],
   },
   {
-    title: "Mobile",
-    items: ["Flutter", "Dart"],
+    title: "Mobile & Frameworks",
+    items: ["Flutter", "React", "Firebase", "Supabase"],
   },
   {
-    title: "Backend",
-    items: ["Node.js", "Express", "REST APIs"],
+    title: "State Management & Architecture",
+    items: ["BLoC/Cubit", "Provider", "Clean Architecture", "GoRouter"],
   },
   {
-    title: "Database",
-    items: ["SQL", "Firebase", "Supabase"],
+    title: "Backend & APIs",
+    items: ["REST APIs", "Dio", "Retrofit", "Firebase Auth & Firestore"],
   },
   {
-    title: "DevOps",
-    items: ["Git", "GitHub", "Docker", "Linux"],
+    title: "Storage & Notifications",
+    items: ["SQLite", "Hive", "SharedPreferences", "FCM", "Local Notifications"],
   },
   {
-    title: "Tools",
-    items: ["VS Code", "Figma", "Power BI", "Excel", "Zabbix"],
+    title: "Tools & Platforms",
+    items: ["Git", "GitHub", "Postman", "Android Studio", "VS Code", "Figma"],
   },
 ];
 
 export const projects: ProjectItem[] = [
   {
-    title: "Northstar Analytics",
+    title: "Flutter E-Commerce Mobile App",
     description:
-      "A premium analytics workspace for growth teams with elegant reporting patterns and proactive insights.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
-    github: "https://github.com",
-    demo: "https://example.com",
+      "Production-ready e-commerce mobile application with product listing and cart management. Applied Clean Architecture with feature-based modular structure and robust state management using BLoC/Cubit.",
+    stack: ["Flutter", "Dart", "BLoC/Cubit", "Dio", "Clean Architecture"],
+    github: "https://github.com/MohammadFayyad",
+    demo: "https://github.com/MohammadFayyad",
     image: "/project-1.svg",
   },
   {
-    title: "Orbit Commerce",
+    title: "Order Tracking Mobile App",
     description:
-      "A modern commerce experience designed to feel fast, focused, and trustworthy from the very first interaction.",
-    stack: ["React", "Node.js", "Firebase", "Stripe"],
-    github: "https://github.com",
-    demo: "https://example.com",
+      "Real-time order tracking application with map visualization. Integrated Google Maps to track delivery progress and implemented push notifications using Firebase Cloud Messaging (FCM).",
+    stack: ["Flutter", "Dart", "Google Maps", "Firebase", "FCM"],
+    github: "https://github.com/MohammadFayyad",
+    demo: "https://github.com/MohammadFayyad",
     image: "/project-2.svg",
   },
   {
-    title: "Signal Studio",
+    title: "Kheirak Platform (ITI Graduation Project)",
     description:
-      "A lightweight product studio platform that turns complicated workflows into calm, intuitive operations.",
-    stack: ["Flutter", "Dart", "REST APIs", "SQL"],
-    github: "https://github.com",
-    demo: "https://example.com",
+      "Multi-role donation and coupon management platform with role-based access control. Implemented Firebase Authentication and real-time data synchronization using Cloud Firestore with full Arabic RTL support.",
+    stack: ["React", "Firebase", "Firestore", "RTL", "Role-Based Access"],
+    github: "https://github.com/MohammadFayyad",
+    demo: "https://github.com/MohammadFayyad",
     image: "/project-3.svg",
   },
 ];
 
 export const resumeHighlights: ResumeItem[] = [
-  { label: "Specialty", value: "Frontend architecture and product design" },
-  { label: "Focus", value: "Performance, accessibility, and product clarity" },
-  { label: "Availability", value: "Open for freelance and full-time roles" },
+  { label: "Specialty", value: "Flutter mobile development and cross-platform applications" },
+  { label: "Focus", value: "Clean architecture, state management, and scalable solutions" },
+  { label: "Location", value: "Port Said, Egypt — Ready to relocate" },
 ];
