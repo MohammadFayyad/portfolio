@@ -4,9 +4,14 @@ export const siteConfig = {
   domain: "https://mohamedgfyad.dev",
   email: "mohamedgfyad@gmail.com",
   phone: "+20 102 907 6345",
-  location: "Port Said, Egypt — Ready to relocate",
+  location: "Port Said, Egypt - Ready to relocate",
   description:
     "Flutter-focused mobile developer experienced in building scalable cross-platform applications. Strong background in Dart, Flutter, state management, clean architecture, and API integration.",
+  socialLinks: [
+    { label: "GitHub", href: "https://github.com/MohammadFayyad" },
+    { label: "LinkedIn", href: "https://linkedin.com/in/muhammadfayyad" },
+    { label: "Email", href: "mailto:mohamedgfyad@gmail.com" },
+  ],
   navItems: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
