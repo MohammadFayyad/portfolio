@@ -1,12 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Code2, MapPin, Sparkles } from "lucide-react";
+import { ArrowRight, Code2, Github, Linkedin, Mail, MapPin, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/constants/site";
 
 const specialties = ["Flutter", "Dart", "BLoC / Cubit", "Clean Architecture"];
+const socialIcons = { GitHub: Github, LinkedIn: Linkedin, Email: Mail };
 
 export function HeroSection() {
   return (
@@ -20,9 +22,15 @@ export function HeroSection() {
             <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-zinc-50 sm:text-6xl sm:leading-[1.04]">Thoughtful mobile apps, built to scale.</h1>
             <p className="max-w-2xl text-lg leading-8 text-zinc-300 sm:text-xl">I build cross-platform Flutter applications with clean architecture, reliable state management, and polished user experiences - from API integration to delivery.</p>
           </div>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <Button asChild size="lg"><Link href="/projects">See selected work <ArrowRight className="h-4 w-4" /></Link></Button>
             <Button asChild variant="secondary" size="lg"><Link href="/contact">Start a conversation</Link></Button>
+            <div className="flex items-center gap-2 sm:ml-1">
+              {siteConfig.socialLinks.map((social) => {
+                const Icon = socialIcons[social.label as keyof typeof socialIcons];
+                return <Link key={social.label} href={social.href} target={social.label === "Email" ? undefined : "_blank"} rel={social.label === "Email" ? undefined : "noreferrer"} className="rounded-full border border-white/10 p-2.5 text-zinc-300 transition hover:border-teal-200/30 hover:text-teal-100" aria-label={social.label}><Icon className="h-4 w-4" /></Link>;
+              })}
+            </div>
           </div>
         </motion.div>
         <div className="grid gap-4 rounded-[2rem] border border-white/10 bg-zinc-950/45 p-4 shadow-[0_24px_80px_rgba(0,0,0,0.3)] backdrop-blur-sm md:grid-cols-[1.25fr_0.75fr] md:p-6">
