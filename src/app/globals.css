@@ -5,6 +5,11 @@
   --foreground: #f7f7f3;
 }
 
+html.light {
+  --background: #f7f8fc;
+  --foreground: #111827;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -23,7 +28,10 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: radial-gradient(circle at top left, rgba(113, 113, 122, 0.15), transparent 28%), #05070b;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(20, 184, 166, 0.12), transparent 26%),
+    radial-gradient(circle at 88% 4%, rgba(129, 140, 248, 0.12), transparent 24%),
+    var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
 }
@@ -33,7 +41,50 @@ a {
   text-decoration: none;
 }
 
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 ::selection {
-  background: rgba(255,255,255,0.18);
+  background: rgba(45, 212, 191, 0.35);
   color: white;
+}
+
+/* The portfolio uses a compact dark palette by default. These rules preserve
+   contrast and surface depth when next-themes switches the root to light. */
+.light [class*="bg-zinc-950"] {
+  background-color: rgba(248, 250, 252, 0.9);
+}
+
+.light [class*="bg-zinc-900"] {
+  background-color: rgba(241, 245, 249, 0.95);
+}
+
+.light [class*="bg-white/"] {
+  background-color: rgba(255, 255, 255, 0.74);
+}
+
+.light [class*="text-zinc-50"],
+.light [class*="text-zinc-100"],
+.light [class*="text-zinc-200"] {
+  color: #111827;
+}
+
+.light [class*="text-zinc-300"] {
+  color: #334155;
+}
+
+.light [class*="text-zinc-400"],
+.light [class*="text-zinc-500"] {
+  color: #64748b;
+}
+
+.light [class*="border-white"] {
+  border-color: rgba(15, 23, 42, 0.12);
+}
+
+.light .text-teal-100,
+.light .text-teal-200 {
+  color: #0f766e;
 }
