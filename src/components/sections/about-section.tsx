@@ -1,31 +1,28 @@
 import { Section } from "@/components/ui/section";
 
 export function AboutSection() {
-    return (
-        <Section
-            eyebrow="About"
-            title="Flutter-focused mobile developer with clean architecture expertise."
-            description="I specialize in building scalable cross-platform applications with strong problem-solving skills and a focus on maintainable solutions."
-            className="border-t border-white/10"
-        >
-            <div className="grid gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 md:grid-cols-[1fr_0.85fr] md:p-8">
-                <div className="space-y-4 text-lg leading-8 text-zinc-300">
-                    <p>
-                        B.Sc. in Computing & Bioinformatics from Port Said University (2024). Currently transitioning from ITI's intensive Front-End & Cross-Platform Development Program (Mar-Aug 2025).
-                    </p>
-                    <p>
-                        I'm passionate about breaking down complex requirements into scalable and maintainable mobile solutions using Flutter, Dart, and modern state management patterns.
-                    </p>
-                </div>
-                <div className="rounded-2xl border border-white/10 bg-zinc-900/70 p-6">
-                    <p className="text-sm uppercase tracking-[0.3em] text-zinc-500">What I bring</p>
-                    <ul className="mt-4 space-y-3 text-sm text-zinc-300">
-                        <li>• Clean Architecture with BLoC/Cubit state management</li>
-                        <li>• Firebase and REST API integration expertise</li>
-                        <li>• Production-ready cross-platform applications</li>
-                    </ul>
-                </div>
-            </div>
-        </Section>
-    );
+  return (
+    <Section
+      eyebrow="About"
+      title="A mobile developer who values clarity and maintainability."
+      description="I turn complex requirements into dependable cross-platform experiences, with a practical focus on architecture, collaboration, and delivery."
+      className="border-t border-white/10"
+    >
+      <div className="grid gap-6 rounded-[1.75rem] border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[1.15fr_0.85fr] md:p-8">
+        <div className="space-y-4 text-lg leading-8 text-zinc-300">
+          <p>I earned a B.Sc. in Computing & Bioinformatics from Port Said University in 2024, graduating with Very Good with Honors. I then completed ITI&apos;s Front-End & Cross-Platform Development ICC Program in 2025.</p>
+          <p>My work centers on Flutter and Dart, where I combine Clean Architecture, BLoC/Cubit, and thoughtful API integration to build applications that are easy to extend and maintain.</p>
+        </div>
+        <div className="rounded-2xl border border-teal-200/15 bg-gradient-to-br from-teal-300/10 to-indigo-400/10 p-6">
+          <p className="text-sm uppercase tracking-[0.22em] text-teal-100">What I bring</p>
+          <ul className="mt-4 space-y-3 text-sm leading-6 text-zinc-200">
+            <li>Clean Architecture and feature-based organization</li>
+            <li>Flutter state management with BLoC/Cubit and Provider</li>
+            <li>REST APIs, Firebase, Firestore, and notifications</li>
+            <li>Clear communication, ownership, and continuous learning</li>
+          </ul>
+        </div>
+      </div>
+    </Section>
+  );
 }
